@@ -16,6 +16,8 @@ RUN dpkg --add-architecture arm64 \
     && apt-get -y upgrade \
     && apt-get install -y --no-install-recommends \
         build-essential \
+        gcc \
+        cpp \
         libasound2-dev \
         libpulse-dev \
         crossbuild-essential-arm64 \
